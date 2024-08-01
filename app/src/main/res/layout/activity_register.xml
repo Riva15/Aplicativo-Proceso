@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo3">
+
+    <ImageView
+        android:id="@+id/ivfondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blanco1"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATE"
+        app:layout_constraintTop_toBottomOf="@+id/ivfondo"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/days"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvLetra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Es rápido y fácil"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegister"
+        android:layout_marginRight="185dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/etEditarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@+id/tvLetra"
+        android:layout_marginTop="13dp"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="@color/black"
+        android:hint="Nombre y apellidos"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@+id/etEditarText"
+        android:layout_marginTop="13dp"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="@color/black"
+        android:hint="Nombre de usuario"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/etEditarText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@+id/etUsuario"
+        android:layout_marginTop="13dp"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="@color/black"
+        android:hint="Correo Electronico"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/etEditarText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@+id/etEditarText2"
+        android:layout_marginTop="13dp"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="@color/black"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etEditarText3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="50dp"
+        android:text="Registrar"
+        style="@style/DegradadoBoton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

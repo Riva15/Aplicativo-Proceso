@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/atardecer">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginVertical="80dp"
+        android:background="@drawable/frame1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        android:layout_marginTop="40dp">
+        <View
+            android:id="@+id/vCuadro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/plateadofondo"
+            tools:ignore="MissingConstraints,NotSibling" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AGENDA INDUSTRIAL"
+            app:layout_constraintTop_toTopOf="@+id/vCuadro"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/days"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/tvTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#FF0000"
+            android:hint="Usuario o correo electronico"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            tools:ignore="MissingConstraints"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/etUsuario"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="55dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#FF0000"
+            android:hint="Contraseña"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            tools:ignore="MissingConstraints"/>
+
+        <Button
+            android:id="@+id/btnIngreso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:text="Ingresar"
+            android:textColor="@color/white"
+            android:backgroundTint="#001767"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

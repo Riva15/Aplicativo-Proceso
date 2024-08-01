@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ProyectoAplicativo</string>
+    <string name="rayito"><u>Ingresar como invitado</u></string>
+
+    <!-- Descripción para el botón de vista -->
+    <string name="view_description">View</string>
+    <!-- Descripción para el botón de búsqueda -->
+    <string name="search_description">Search</string>
+    <!-- Descripción para el botón de enviar -->
+    <string name="send_description">Send</string>
+    <string name="calendario_desc">Abrir calendario</string>
+
+    <!---AGREGAR NOTA-->
+    <string name="Uid_Usuario"> Uid del usuario</string>
+    <string name="Correo_usuario">Correo de Usuario</string>
+    <string name="Fecha_hora_actual">Fecha y hora actual</string>
+    <string name="Titulo"> Titulo </string>
+    <string name="Descripcion"> Descripcion</string>
+    <string name="Btn_Calendario">Calendario</string>
+    <string name="Fecha">00/00/0000</string>
+    <string name="Estado">No finalizado</string>
+    <string name="Guardar">Guardar</string>
+</resources>
